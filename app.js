@@ -32,7 +32,37 @@ new Typewriter(txtAnim, {
     .pauseFor(2000)
     .deleteChars(5)
     .start()
-    /*const allLettre = document.querySelectorAll('.bloc span');
+
+// Tableau contenant les images
+const images = ["pictures/img.png", "pictures/pc.png", "pictures/Wireframe mobile.png", "pictures/fonction.png", "pictures/bacOfice.png"];
+let currentIndex = 0;
+
+// Sélection des éléments HTML
+const sliderImg = document.getElementById("slider-img");
+const prevButton = document.getElementById("prev");
+const nextButton = document.getElementById("next");
+
+// Fonction pour mettre à jour l'image affichée
+function updateImage() {
+    sliderImg.src = images[currentIndex];
+}
+
+// Événement pour le bouton "Précédent"
+prevButton.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    updateImage();
+});
+
+// Événement pour le bouton "Suivant"
+nextButton.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateImage();
+});
+
+// Initialisation avec la première image
+updateImage();
+
+/*const allLettre = document.querySelectorAll('.bloc span');
 
 const animLettre = gsap.timeline();
 

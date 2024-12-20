@@ -248,6 +248,7 @@ h3 {
 
 .projet {
     width: 400px;
+    height: 350px;
     margin: 30px;
     display: inline-block;
     background-color: white;
@@ -272,6 +273,9 @@ h3 {
 .projet span {
     display: block;
     text-transform: uppercase;
+    color: rgb(149, 0, 255);
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .pictures {
@@ -281,7 +285,8 @@ h3 {
 }
 
 .date_project {
-    font-size: 0.7em;
+    font-size: 14px;
+    color: rgb(52, 51, 51);
 }
 
 #mail {
@@ -312,3 +317,43 @@ footer {
     padding: 15px;
     text-align: center;
 }
+
+
+/*slide*/
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+    width: 400px;
+    height: 266px;
+}
+
+.slider img {
+    width: 400px;
+    height: 266px;
+    object-fit: cover;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgb(26, 33, 247);
+    border: none;
+    cursor: pointer;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+
+/*end slide*/
