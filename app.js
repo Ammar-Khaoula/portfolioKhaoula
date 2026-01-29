@@ -33,8 +33,31 @@ new Typewriter(txtAnim, {
     .deleteChars(5)
     .start()
 
+const buttons = document.querySelectorAll('.filter-btn');
+const projects = document.querySelectorAll('.projet');
+
+buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const filter = btn.dataset.filter;
+
+        projects.forEach(project => {
+            if (filter === 'all' || project.classList.contains(filter)) {
+                project.style.display = 'block';
+            } else {
+                project.style.display = 'none';
+            }
+        });
+
+        // bouton actif
+        buttons.forEach(b => b.classList.remove('btn-primary'));
+        buttons.forEach(b => b.classList.add('btn-outline-primary'));
+        btn.classList.remove('btn-outline-primary');
+        btn.classList.add('btn-primary');
+    });
+});
+
 // Tableau contenant les images
-const images = ["pictures/img.png", "pictures/pc.png", "pictures/Wireframe mobile.png", "pictures/fonction.png", "pictures/bacOfice.png"];
+const images = ["img/img.png", "img/pc.png", "img/Wireframe mobile.png", "img/fonction.png", "img/bacOfice.png"];
 let currentIndex = 0;
 
 // Sélection des éléments HTML
@@ -62,40 +85,22 @@ nextButton.addEventListener("click", () => {
 // Initialisation avec la première image
 updateImage();
 
-/*const allLettre = document.querySelectorAll('.bloc span');
 
-const animLettre = gsap.timeline();
+/*********************Competence**************/
+document.addEventListener("DOMContentLoaded", () => {
 
-animLettre
-    .from(allLettre, { opacity:0, top: gsap.utils.wrap([100, -100]), stagger: 0.1, ease: "power2.out" });
+    const bars = document.querySelectorAll(".progress-bar");
 
-const lireLeSuite = document.createElement("a");
-const lesParagraphe = document.querySelectorAll(".presentation")
+    bars.forEach(bar => {
+        const percent = bar.getAttribute("data-percent");
+        bar.style.width = percent + "%";
+    });
 
-lireLeSuite.setAttribute("href", "#paragraphe1")
-lireLeSuite.setAttribute("class", "lien")
+});
+/******************contact**********************/
 
-lireLeSuite.innerHTML = "afficher la suite"
-lesParagraphe[0].appendChild(lireLeSuite);
-
-function cacheTexte() {
-    for (let i = 0; i < lesParagraphe.length; i++) {
-        if (i === 0) {
-            continue;
-        } else if (i > 0) {
-            lesParagraphe[i].style.display = "none";
-        }
-    }
-};
-
-
-function afficheText() {
-    for (let i = 0; i < lesParagraphe.length; i++) {
-        lesParagraphe[i].style.display = "block";
-        lireLeSuite.remove();
-        //ou this.remove();
-    }
-}
-
-cacheTexte();
-lireLeSuite.addEventListener("click", afficheText);*/
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    document.getElementById("successMsg").classList.remove("d-none");
+    this.reset();
+});

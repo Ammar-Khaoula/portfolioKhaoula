@@ -1,96 +1,4 @@
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-}
-
-header {
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-#header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.imageProfil {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    margin-left: 150px;
-    box-shadow: 0 24px 28px rgba(78, 78, 78, 0.7);
-}
-
-h1 {
-    font-family: Cursive, sans-serif;
-    padding: 100px;
-    font-size: 50px;
-    font-weight: 900;
-    letter-spacing: 15px;
-    color: #b0defd;
-}
-
-.btn a {
-    text-decoration: none;
-    color: rgb(73, 11, 80);
-}
-
-section {
-    text-align: center;
-}
-
-.presentation {
-    text-align: left;
-    margin: 40px;
-    font-size: 20px;
-    line-height: 32px;
-}
-
-.presentation span {
-    color: rgb(70, 70, 253);
-    font-weight: bold;
-}
-
-.lien {
-    font-size: 14px;
-    color: rgb(105, 104, 105);
-    float: right;
-    position: relative;
-    bottom: 32px;
-    right: 300px;
-}
-
-h3 {
-    font-size: 40px;
-    text-transform: uppercase;
-    color: #c389f8;
-    font-weight: bolder;
-    letter-spacing: 15px;
-    margin: 20px auto;
-    text-align: center;
-}
-
-.blocSpan {
-    font-size: 40px;
-    text-transform: uppercase;
-    font-weight: bolder;
-    letter-spacing: 15px;
-    margin: 20px auto;
-    color: #c389f8;
-}
-
-.info p {
-    font-size: 25px;
-    margin: auto 20px;
-    line-height: 2em;
-    color: #b0defd;
-}
+/*BIENVENUE*/
 
 .long {
     font-weight: bolder;
@@ -100,243 +8,24 @@ h3 {
     -webkit-text-fill-color: transparent;
 }
 
-.blocSpan ul {
-    display: flex;
-    justify-content: center;
+
+/*PROJECT*/
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.blocSpan ul li {
-    list-style: none;
-    animation: flach 7s linear 3s infinite running;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-@keyframes flach {
-    0% {
-        color: #5B2C6F;
-        text-shadow: none;
-        opacity: 0.5;
-    }
-    90% {
-        color: #dfabf5;
-        text-shadow: none;
-    }
-    100% {
-        color: #8d07fc;
-        text-shadow: 0 0 7px #ca80f5, 0 0 50px #ca80f5;
-    }
-}
-
-.blocSpan ul li:nth-child(1) {
-    animation-delay: 1;
-}
-
-.blocSpan ul li:nth-child(2) {
-    animation-delay: 2s;
-}
-
-.blocSpan ul li:nth-child(3) {
-    animation-delay: 3s;
-}
-
-.blocSpan ul li:nth-child(4) {
-    animation-delay: 4s;
-}
-
-.blocSpan ul li:nth-child(5) {
-    animation-delay: 5s;
-}
-
-.blocSpan ul li:nth-child(6) {
-    animation-delay: 6s;
-}
-
-.blocSpan ul li:nth-child(7) {
-    animation-delay: 7s;
-}
-
-#linkedin {
-    position: relative;
-    left: 90px;
-}
-
-#mail {
-    position: relative;
-    right: 60px;
-}
-
-#telephone {
-    position: absolute;
-}
-
-#telephone i {
-    position: absolute;
-}
-
-#telephone p {
-    font-size: 12px;
-    position: relative;
-    letter-spacing: 1px;
-    opacity: 0;
-}
-
-#telephone p:hover {
-    opacity: 1;
-}
-
-.projet a {
-    text-decoration: none;
-    color: #460385;
-    font-size: 25px;
-}
-
-.nav {
-    display: flex;
-    margin: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn {
-    margin: 20px 80px;
-    margin-bottom: 60px;
-    padding: 20px 40px;
-    text-align: center;
-    cursor: pointer;
-    text-transform: uppercase;
-    color: rgb(73, 11, 80);
-    font-weight: bolder;
-    font-size: 22px;
-    transition: 0.5s;
-    border-radius: 10px;
-    background-size: 200%;
-}
-
-.btn1 {
-    background-image: linear-gradient( to right, #b0defd, #ca80f5, #b0defd);
-}
-
-.btn1:hover {
-    background-position: right;
-}
-
-.btn2 {
-    background-image: linear-gradient( to right, #b0defd, #ca80f5, #b0defd);
-}
-
-.btn2:hover {
-    background-position: right;
-}
-
-.btn3 {
-    background-image: linear-gradient( to right, #b0defd, #ca80f5, #b0defd);
-}
-
-.btn3:hover {
-    background-position: right;
-}
-
-#presentation {
-    font-size: 22px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#mesProjts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.projet {
-    width: 400px;
-    height: 350px;
-    margin: 30px;
-    display: inline-block;
-    background-color: white;
-    padding-bottom: 15px;
-    border: 0px black solid;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 3px 6px rgba(159, 158, 158, 0.16), 0 3px 6px rgba(155, 155, 155, 0.23);
-}
-
-.projet:hover {
-    box-shadow: 0 14px 28px rgba(223, 222, 222, 0.25), 0 10px 10px rgba(243, 242, 242, 0.22);
-    transition: 0.3s;
-}
-
-.projet img {
-    width: 400px;
-    height: 266px;
-    overflow: hidden;
-}
-
-.projet span {
-    display: block;
-    text-transform: uppercase;
-    color: rgb(149, 0, 255);
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.pictures {
-    width: 400px;
-    height: 266px;
-    overflow: hidden;
-}
-
-.date_project {
-    font-size: 14px;
-    color: rgb(52, 51, 51);
-}
-
-#mail {
-    color: #460385;
-    font-size: 18px;
-    font-weight: bolder;
-}
-
-.contacts {
-    display: flex;
-    justify-content: center;
-}
-
-.contacts i {
-    margin: 20px;
-    font-size: 35px;
-    color: #b4e5ff;
-    padding: 15px;
-}
-
-.contacts i:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 10px rgba(243, 241, 241, 0.2);
-}
-
-footer {
-    color: white;
-    padding: 15px;
-    text-align: center;
-}
-
-
-/*slide*/
-
-.slider {
-    position: relative;
-    overflow: hidden;
-    margin: auto;
-    text-align: center;
-    width: 400px;
-    height: 266px;
-}
-
-.slider img {
-    width: 400px;
-    height: 266px;
+.card img {
+    height: 200px;
     object-fit: cover;
 }
 
-button {
+.slider button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -356,4 +45,29 @@ button {
 }
 
 
-/*end slide*/
+/*Competence*/
+
+.skill span {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.progress {
+    height: 22px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    width: 0;
+    background-color: #0d6efd;
+    font-weight: bold;
+    transition: width 1.5s ease-in-out;
+}
+
+
+/*contact*/
+
+#contact {
+    background-color: #f9f9f9;
+}

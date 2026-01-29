@@ -3,37 +3,58 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Création de sites vétérinaires, blogs, portfolios, sites sur mesure en PHP Symfony et Vue.js, ainsi que conception de logos et flyers professionnels.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio AMMAR KHAOULA - Développeuse Wordpress - PHP/Symfony - Vue.Js </title>
-    <link rel='stylesheet' href='style.css'>
-    <link rel="stylesheet" type="text/css" href="ecran_tablette.css" media="all and (min-width:769px) and (max-width:991px)">
-    <link rel="stylesheet" type="text/css" href="petite_ecran.css" media="all and (max-width:768px)">
-    <script src="https://kit.fontawesome.com/613a25ab47.js" crossorigin="anonymous"></script>
+    <meta name="keywords" content="développeuse web, création site internet, portfolio, logo, flyer, carte de visite, bootstrap, wordpress, SEO">
+    <meta name="author" content="Khaoula digital studio">
+    <meta name="robots" content="index, follow">
 
+    <title>Khaoula digital studio | Développeuse Web Freelance</title>
+    <meta name="description" content="Développeuse web freelance, création de sites internet modernes en HTML, CSS, JavaScript. Projets PHP et WordPress disponibles sur GitHub.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Votre CSS perso -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header id="header">
-        <div>
-            <img class="imageProfil" src="pictures/monImage1.png" alt="image de profil">
-        </div>
-        <div>
-            <h1> Ammar Khaoula</h1>
-        </div>
 
-    </header>
-    <nav>
-        <div class="nav">
-            <div class="btn btn1">acceuil</div>
-            <div class="btn btn2"><a href="#projects">projets</a></div>
-            <div class="btn btn3"><a href="#contacts">contact</a></div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="Logo" width="60" height=auto class="d-inline-block align-text-top rounded-circle">
+            </a>
+
+            <!-- Bouton hamburger pour mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Liens de navigation -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projets">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#competences">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <section>
-        <h3>Bienvenue</h3>
+    <!-- Sections exemple -->
+    <section id="accueil" class="p-5 text-center">
+        <h1>Bienvenue sur mon portfolio</h1>
         <div class="info ">
             <p>Depuis 2020, je suis passionnée par les nouvelles technologies numériques et <br>le développement web. Grâce à ma formation et à mes projets,<br> j’ai pu acquérir des compétences solides qui me permettent de concevoir des sites et
                 <br>des applications modernes. Je travaille avec des outils comme : </p>
@@ -41,191 +62,283 @@
         </div>
     </section>
 
-    <!--projet-->
-    <section id="projects ">
-        <h3>Mes Projets</h3>
-        <div id="mesProjts ">
+    <section id="projects" class="container py-5">
+        <h3 class="text-center mb-4">Mes Projets</h3>
 
-            <div class="projet">
-                <a href="https://ammar-khaoula.github.io/reservia.githup.io/ ">
-                    <div class="pictures ">
-                        <img src="pictures/Avion (2).jpg " alt="Reservia ">
-                    </div>
-                    <span>reservia</span>
-                    <small class="date_project ">21/03/2021</small>
-                </a>
-            </div>
+        <!-- Boutons filtres -->
+        <div class="text-center mb-4">
+            <button class="btn btn-primary me-2 filter-btn" data-filter="all">All</button>
+            <button class="btn btn-outline-primary me-2 filter-btn" data-filter="html">HTML + CSS</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="logo">Logo</button>
+        </div>
 
-            <div class="projet ">
-                <a href="https://ammar-khaoula.github.io/AmmarKhaoula_3_21032021.githup.io/ ">
-                    <div class="pictures ">
-                        <img src="pictures/food.jpg " alt="food ">
-                    </div>
-                    <span>ohmyfood</span>
-                    <small class="date_project ">26/04/2021</small>
-                </a>
-            </div>
+        <!-- Grille Bootstrap -->
+        <div class="row" id="mesProjets">
 
-            <div class="projet ">
-                <a href="https://ammar-khaoula.github.io/chouette_entreprise_webdesign_Lyon/ ">
-                    <div class="pictures ">
-                        <img src="pictures/seo.png " alt="seo ">
+            <!-- PROJET -->
+            <div class="col-lg-4 col-md-6 mb-4 projet html">
+                <a href="https://ammar-khaoula.github.io/reservia.githup.io/" class="card h-100 text-decoration-none">
+                    <img src="img/Avion (2).jpg" class="card-img-top" alt="Reservia">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Reservia</h5>
+                        <small>21/03/2021</small>
                     </div>
-                    <span>La chouette agence</span>
-                    <small class="date_project ">17/05/2021</small>
                 </a>
             </div>
 
-            <div class="projet ">
-                <a href="https://ammar-khaoula.github.io/front_end/ ">
-                    <div class="pictures ">
-                        <img src="pictures/camera.jpg " alt="vente camera ">
+            <div class="col-lg-4 col-md-6 mb-4 projet html">
+                <a href="https://ammar-khaoula.github.io/AmmarKhaoula_3_21032021.githup.io/" class="card h-100 text-decoration-none">
+                    <img src="img/food.jpg" class="card-img-top" alt="OhMyFood">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">OhMyFood</h5>
+                        <small>26/04/2021</small>
                     </div>
-                    <span>orinoco</span>
-                    <small class="date_project ">18/07/2021</small>
                 </a>
             </div>
 
-            <div class="projet ">
-                <a href="https://github.com/Ammar-Khaoula/-p7reseauSocial.git ">
-                    <div class="pictures ">
-                        <img src="pictures/reseau_social.png " alt="reseau_social ">
+            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+                <a href="https://ammar-khaoula.github.io/chouette_entreprise_webdesign_Lyon/ " class="card h-100 text-decoration-none">
+                    <img src="img/seo.png" class="card-img-top" alt="seo">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">La chouette agence</h5>
+                        <small>17/05/2021</small>
                     </div>
-                    <span>Reseau Social</span>
-                    <small class="date_project ">18/10/2021</small>
                 </a>
             </div>
 
-            <div class="projet ">
-                <a href="https://ammar-khaoula.github.io/jeuxEnfant_01_22/ ">
-                    <div class="pictures ">
-                        <img src="pictures/memoire.jpg " alt="jeux de memoire ">
+            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+                <a href="https://ammar-khaoula.github.io/front_end/" class="card h-100 text-decoration-none">
+                    <img src="img/camera.jpg" class="card-img-top" alt="Orinoco">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Orinoco</h5>
+                        <small>18/07/2021</small>
                     </div>
-                    <span>jeux mémoire</span>
-                    <small class="date_project ">01/01/2022</small>
                 </a>
-
             </div>
-
-            <div class="projet ">
-                <a href="https://ammar-khaoula.github.io/APIMeteo/ ">
-                    <div class="pictures ">
-                        <img src="pictures/arriere_plan.jpg " alt="meteo ">
+            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+                <a href="https://github.com/Ammar-Khaoula/-p7reseauSocial.git " class="card h-100 text-decoration-none">
+                    <img src="img/reseau_social.png " class="card-img-top" alt="reseau_social">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Reseau Social</h5>
+                        <small>18/10/2021</small>
                     </div>
-                    <span>API meteo</span>
-                    <small class="date_project ">01/02/2022</small>
                 </a>
             </div>
-
-            <div class="projet ">
-                <a href="https://ammar-khaoula.github.io/sale-de-sport/ ">
-                    <div class="pictures ">
-                        <img src="pictures/2.jpg " alt="salle de sport ">
+            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+                <a href="https://ammar-khaoula.github.io/jeu_de_concentration/" class="card h-100 text-decoration-none">
+                    <img src="img/memoire.jpg " class="card-img-top" alt="jeux de memoire">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">jeux mémoire</h5>
+                        <small>01/01/2022</small>
                     </div>
-                    <span>salle de sport</span>
-                    <small class="date_project ">10/02/2022</small>
                 </a>
             </div>
-
-            <div class="projet ">
-                <a href="https://ammar-khaoula.github.io/e-commerce/ ">
-                    <div class="pictures ">
-                        <img src="pictures/vetement1.jpg " alt="e-commerce ">
+            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+                <a href="https://ammar-khaoula.github.io/APIMeteo/ " class="card h-100 text-decoration-none">
+                    <img src="img/arriere_plan.jpg" class="card-img-top" alt="meteo">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">API meteo</h5>
+                        <small>01/02/2022</small>
                     </div>
-                    <span>e-Commerce</span>
-                    <small class="date_project ">01/03/2022</small>
                 </a>
             </div>
-            <div class="projet ">
-                <a href="https://ammar-khaoula.github.io/Equipement-Pour-Industrie/ ">
-                    <div class="pictures ">
-                        <img src="pictures/industrie1.jpg" alt="Industrie">
+            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+                <a href="https://ammar-khaoula.github.io/sale-de-sport/ " class="card h-100 text-decoration-none">
+                    <img src="img/2.jpg" class="card-img-top" alt="salle de sport">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">salle de sport</h5>
+                        <small>10/02/2022</small>
                     </div>
-                    <span>Equipement Pour Industrie</span>
-                    <small class="date_project ">31/03/2022</small>
                 </a>
             </div>
-            <div class="projet ">
-                <a href="https://ammar-khaoula.github.io/AvocatCherif/">
-                    <div class="pictures ">
-                        <img src="pictures/Avocat.jpg" alt="Avocat">
+            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+                <a href="https://ammar-khaoula.github.io/e-commerce/ " class="card h-100 text-decoration-none">
+                    <img src="img/vetement1.jpg" class="card-img-top" alt="e-Commerce">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">e-Commerce</h5>
+                        <small>01/03/2022</small>
                     </div>
-                    <span>Avocat</span>
-                    <small class="date_project ">01/01/2023</small>
                 </a>
             </div>
-            <div class="projet ">
-                <a href="https://ammar-khaoula.github.io/peitureKamel/">
-                    <div class="pictures ">
-                        <img src="pictures/peinture.jpg" alt="batiment">
+            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+                <a href="https://ammar-khaoula.github.io/Equipement-Pour-Industrie/ " class="card h-100 text-decoration-none">
+                    <img src="img/industrie1.jpg" class="card-img-top" alt="Industrie">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Equipement Pour Industrie</h5>
+                        <small>31/03/2022</small>
                     </div>
-                    <span>Bâtiment</span>
-                    <small class="date_project ">31/01/2023</small>
                 </a>
             </div>
-            <div class="projet">
-                <a href="https://agence-immobiliere.ammarkhaoula.com/">
-                    <div class="pictures ">
-                        <img src="pictures/1.png" alt="agence-immobiliere">
+            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+                <a href="https://ammar-khaoula.github.io/AvocatCherif/" class="card h-100 text-decoration-none">
+                    <img src="img/Avocat.jpg" class="card-img-top" alt="Avocat">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Avocat</h5>
+                        <small>01/01/2023</small>
                     </div>
-                    <span>agence immobiliere</span>
-                    <small>"Wordpress"</small></br>
-                    <small class="date_project ">31/04/2023</small>
                 </a>
             </div>
-            <div class="projet">
-
-                <div class="pictures ">
-                    <img src="pictures/img.png" alt="agence-immobiliere">
-                </div>
-                <span>cahier des charges</span>
-                <small class="date_project ">31/05/2023</small>
+            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+                <a href="https://ammar-khaoula.github.io/peitureKamel/" class="card h-100 text-decoration-none">
+                    <img src="img/peinture.jpg" class="card-img-top" alt="batiment">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Bâtiment</h5>
+                        <small>31/01/2023</small>
+                    </div>
                 </a>
             </div>
-
-            <div class="projet">
-                <div class="slider">
-                    <img id="slider-img" src="pictures/img.png" alt="Photo Slider">
+            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+                <a href="#" class="card h-100 text-decoration-none">
+                    <img src="img/1.png" class="card-img-top" alt="agence-immobiliere">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">agence immobiliere <small>"Wordpress"</small></h5>
+                        <small>31/04/2023</small>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+                <div class="card h-100 text-decoration-none slider">
+                    <img id="slider-img" src="img/img.png" class="card-img-top" alt="Photo Slider">
                     <button id="prev"> ❮ </button>
                     <button id="next"> ❯ </button>
+                    <h5 class="card-title">cahier des charges </h5>
+                    <small>31/05/2023</small>
                 </div>
-                <span>cahier des charges</span>
-                <small class="date_project ">31/05/2023</small>
+            </div>
+            <!--PHP-->
+            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+                <a href="#" class="card h-100 text-decoration-none"><button type="button" class="btn btn-warning"> Voir le code sur GitHub</button>
+                    <img src="img/logo.png" class="card-img-top" alt="">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Réseau Social (PHP)</h5>
+                        <p>
+                            Application web développée en PHP & MySQL. Gestion des utilisateurs, authentification, CRUD.
+                        </p>
+                        <small>31/04/2023</small>
+                    </div>
                 </a>
             </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section id="competences" class="container py-5">
+        <h2 class="text-center mb-5">Mes Compétences</h2>
+        <p class="text-center text-muted mb-5">
+            Je développe des sites web modernes, performants et adaptés aux besoins des clients, avec une attention particulière au design et au référencement.
+        </p>
+
+        <div class="row">
+            <!-- Colonne gauche -->
+            <div class="col-md-6">
+
+                <div class="skill mb-4">
+                    <span>HTML/css</span>
+                    <small class="text-muted">
+                    Intégration de maquettes, responsive design, accessibilité.
+                    </small>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="95">95%</div>
+                    </div>
+                </div>
+
+
+
+                <div class="skill mb-4">
+                    <span>JavaScript</span>
+                    <small class="text-muted">
+                    Interactions dynamiques, DOM, animations, logique front-end.
+                    </small>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="75">75%</div>
+                    </div>
+                </div>
+
+                <div class="skill mb-4">
+                    <span>Bootstrap</span>
+                    <small class="text-muted">
+                    Interactions dynamiques, DOM, animations, logique front-end.
+                    </small>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="80">80%</div>
+                    </div>
+                </div>
+                <div class="skill mb-4">
+                    <span>WordPress</span>
+                    <small class="text-muted">
+                Création de thèmes, personnalisation, sites vitrines et blogs.
+                </small>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="85">85%</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+
+                <div class="skill mb-4">
+                    <span>PHP</span>
+                    <small class="text-muted">
+                    Développement back-end, formulaires, logique serveur.
+                    </small>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="65">65%</div>
+                    </div>
+                </div>
+
+                <div class="skill mb-4">
+                    <span>SEO</span>
+                    <small class="text-muted">
+                    Optimisation on-page, performance et référencement naturel.
+                    </small>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="60">60%</div>
+                    </div>
+                </div>
+
+                <div class="skill mb-4">
+                    <span>Canva</span>
+                    <small class="text-muted">
+                    Création de visuels et supports graphiques.
+                    </small>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="65">65%</div>
+                    </div>
+                </div>
+
+
+            </div>
 
         </div>
     </section>
-    <section class="blocSpan " id="contacts ">
-        <ul>
-            <li>C</li>
-            <li>o</li>
-            <li>n</li>
-            <li>t</li>
-            <li>a</li>
-            <li>c</li>
-            <li>t</li>
-        </ul>
-        <div class="contacts">
-            <div class="contact " id="mail ">
-                <a href='mailto:khaoulabha1991@gmail.com '><i class="fas fa-envelope-square "></i></a>
-            </div>
-            <div class="contact " id="telephone">
-                <i class="fas fa-phone-square-alt "></i>
-                <p>07 68 83 67 05</p>
-            </div>
-            <div class="contact " id="linkedin">
-                <a href="https://www.linkedin.com/in/khaoula-ammar/ "><i class="fab fa-linkedin "></i></a>
-            </div>
-        </div>
-    </section>
-    <!--footer-->
 
-    <footer>
-        <p> 2024&copy;Ammar Khaoula</p>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js "></script>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js "></script>
+    <section id="contact" class="container py-5 text-center">
+        <h2>Contact</h2>
+
+        <p class="text-muted mb-4">
+            Vous avez un projet web ou besoin d’une identité visuelle ? Contactez-moi directement.
+        </p>
+
+        <p>
+            📧 <a href="mailto:khaoula.digital.studio@gmail.com">khaoula.digital.studio@gmail.com</a><br> 💼 <a href="https://www.linkedin.com/in/khaoula-ammar/">LinkedIn</a><br> 🧑‍💻 <a href="https://github.com/Ammar-Khaoula">GitHub</a>
+        </p>
+
+        <a href="mailto:khaoula.digital.studio@gmail.com" class="btn btn-primary mt-3">
+    Me contacter
+  </a>
+
+        <p class="text-muted mt-4">
+            Disponible pour missions freelance et collaborations.
+        </p>
+    </section>
+
+
+    <!-- Bootstrap JS (Popper inclus) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Librairie Typewriter -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="app.js "></script>
 </body>
 
