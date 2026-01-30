@@ -2,6 +2,7 @@
 <html lang="fr">
 
 <head>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="img/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="développeuse web, création site internet, portfolio, logo, flyer, carte de visite, bootstrap, wordpress, SEO">
@@ -10,6 +11,8 @@
 
     <title>Khaoula digital studio | Développeuse Web Freelance</title>
     <meta name="description" content="Développeuse web freelance, création de sites internet modernes en HTML, CSS, JavaScript. Projets PHP et WordPress disponibles sur GitHub.">
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -20,23 +23,25 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
         <div class="container">
+
             <!-- Logo -->
-            <a class="navbar-brand" href="#">
-                <img src="./img/logo.png" alt="Logo" width="60" height=auto class="d-inline-block align-text-top rounded-circle">
+            <a class="navbar-brand d-flex align-items-center" href="#accueil">
+                <img src="./img/logo.png" alt="Khaoula Digital Studio" class="logo">
+                <span class="brand-text ms-2">Khaoula Digital Studio</span>
             </a>
 
-            <!-- Bouton hamburger pour mobile -->
+            <!-- Hamburger -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Liens de navigation -->
+            <!-- Menu -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#accueil">Accueil</a>
+                        <a class="nav-link" href="#accueil">Accueil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#projets">Projets</a>
@@ -45,31 +50,43 @@
                         <a class="nav-link" href="#competences">Compétences</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link btn-contact" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
+
         </div>
     </nav>
 
+
     <!-- Sections exemple -->
     <section id="accueil" class="p-5 text-center">
-        <h1>Bienvenue sur mon portfolio</h1>
+        <h1 class="titre">Bienvenue sur mon portfolio</h1>
         <div class="info ">
-            <p>Depuis 2020, je suis passionnée par les nouvelles technologies numériques et <br>le développement web. Grâce à ma formation et à mes projets,<br> j’ai pu acquérir des compétences solides qui me permettent de concevoir des sites et
-                <br>des applications modernes. Je travaille avec des outils comme : </p>
+            <p> Développeuse web freelance passionnée par les nouvelles technologies,
+                </br> je conçois des sites internet modernes,
+                </br>responsives et adaptés aux besoins des entreprises et des indépendants.
+                </br>Depuis 2020, grâce à ma formation et à mes projets,
+                </br>j’ai acquis des compétences solides me permettant
+                </br>de créer des solutions web efficaces et professionnelles.
+            </p>
+            <p class="fw-semibold text-muted">
+                Technologies que j’utilise au quotidien :
+            </p>
+
             <br/><span class="long"></span>
         </div>
     </section>
 
-    <section id="projects" class="container py-5">
-        <h3 class="text-center mb-4">Mes Projets</h3>
+    <section id="projects" class=" py-5">
 
+        <h3 class="text-center mb-4 titre">Mes Projets</h3>
         <!-- Boutons filtres -->
         <div class="text-center mb-4">
             <button class="btn btn-primary me-2 filter-btn" data-filter="all">All</button>
-            <button class="btn btn-outline-primary me-2 filter-btn" data-filter="html">HTML + CSS</button>
-            <button class="btn btn-outline-primary filter-btn" data-filter="logo">Logo</button>
+            <button class="btn btn-outline-primary me-2 filter-btn" data-filter="html">HTML/CSS/JS</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="WordPress">WordPress</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="php">PHP</button>
         </div>
 
         <!-- Grille Bootstrap -->
@@ -96,7 +113,7 @@
                 </a>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+            <div class="col-lg-4 col-md-6 mb-4 projet html">
                 <a href="https://ammar-khaoula.github.io/chouette_entreprise_webdesign_Lyon/ " class="card h-100 text-decoration-none">
                     <img src="img/seo.png" class="card-img-top" alt="seo">
                     <div class="card-body text-center">
@@ -106,7 +123,7 @@
                 </a>
             </div>
 
-            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+            <div class="col-lg-4 col-md-6 mb-4 projet html">
                 <a href="https://ammar-khaoula.github.io/front_end/" class="card h-100 text-decoration-none">
                     <img src="img/camera.jpg" class="card-img-top" alt="Orinoco">
                     <div class="card-body text-center">
@@ -115,7 +132,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+            <div class="col-lg-4 col-md-6 mb-4 projet html">
                 <a href="https://github.com/Ammar-Khaoula/-p7reseauSocial.git " class="card h-100 text-decoration-none">
                     <img src="img/reseau_social.png " class="card-img-top" alt="reseau_social">
                     <div class="card-body text-center">
@@ -124,7 +141,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+            <div class="col-lg-4 col-md-6 mb-4 projet html">
                 <a href="https://ammar-khaoula.github.io/jeu_de_concentration/" class="card h-100 text-decoration-none">
                     <img src="img/memoire.jpg " class="card-img-top" alt="jeux de memoire">
                     <div class="card-body text-center">
@@ -133,7 +150,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+            <div class="col-lg-4 col-md-6 mb-4 projet html">
                 <a href="https://ammar-khaoula.github.io/APIMeteo/ " class="card h-100 text-decoration-none">
                     <img src="img/arriere_plan.jpg" class="card-img-top" alt="meteo">
                     <div class="card-body text-center">
@@ -142,7 +159,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+            <div class="col-lg-4 col-md-6 mb-4 projet html">
                 <a href="https://ammar-khaoula.github.io/sale-de-sport/ " class="card h-100 text-decoration-none">
                     <img src="img/2.jpg" class="card-img-top" alt="salle de sport">
                     <div class="card-body text-center">
@@ -151,7 +168,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+            <div class="col-lg-4 col-md-6 mb-4 projet html">
                 <a href="https://ammar-khaoula.github.io/e-commerce/ " class="card h-100 text-decoration-none">
                     <img src="img/vetement1.jpg" class="card-img-top" alt="e-Commerce">
                     <div class="card-body text-center">
@@ -160,16 +177,16 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+            <div class="col-lg-4 col-md-6 mb-4 projet html">
                 <a href="https://ammar-khaoula.github.io/Equipement-Pour-Industrie/ " class="card h-100 text-decoration-none">
-                    <img src="img/industrie1.jpg" class="card-img-top" alt="Industrie">
+                    <img src="img/industrie.png" class="card-img-top" alt="Industrie">
                     <div class="card-body text-center">
                         <h5 class="card-title">Equipement Pour Industrie</h5>
                         <small>31/03/2022</small>
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+            <div class="col-lg-4 col-md-6 mb-4 projet html">
                 <a href="https://ammar-khaoula.github.io/AvocatCherif/" class="card h-100 text-decoration-none">
                     <img src="img/Avocat.jpg" class="card-img-top" alt="Avocat">
                     <div class="card-body text-center">
@@ -178,7 +195,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+            <div class="col-lg-4 col-md-6 mb-4 projet html">
                 <a href="https://ammar-khaoula.github.io/peitureKamel/" class="card h-100 text-decoration-none">
                     <img src="img/peinture.jpg" class="card-img-top" alt="batiment">
                     <div class="card-body text-center">
@@ -187,7 +204,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+            <div class="col-lg-4 col-md-6 mb-4 projet WordPress">
                 <a href="#" class="card h-100 text-decoration-none">
                     <img src="img/1.png" class="card-img-top" alt="agence-immobiliere">
                     <div class="card-body text-center">
@@ -196,35 +213,48 @@
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4 projet logo">
+            <!--PHP-->
+            <div class="col-lg-4 col-md-6 mb-4 projet php">
+                <a href="https://github.com/Ammar-Khaoula/Blog_Post" class="card h-100 text-decoration-none"><button type="button" class="btn btn-warning"> Voir le code sur GitHub</button>
+                    <img src="img/blog.png" class="card-img-top" alt="">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Blog (PHP)</h5>
+                        <p>
+                        Blog web développé en PHP & MySQL. Gestion des articles, système d’authentification, espace administrateur, CRUD (création, modification, suppression), interface responsive.                        </p>
+                        <small>9/10/2023</small>
+                    </div>
+                    </a>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 projet php">
+                <a href="#" class="card h-100 text-decoration-none"><button type="button" class="btn btn-warning"> Voir le code sur GitHub</button>
+                    <img src="img/e_commerce.png" class="card-img-top" alt="">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">e-commerce (PHP)</h5>
+                        <p>
+                            Application e-commerce développée en PHP & MySQL.
+                            Gestion des produits, système d’authentification, espace administrateur, opérations CRUD (création, modification, suppression) et interface responsive.
+                        </p>
+                        <small>31/04/2024</small>
+                    </div>
+                    </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 projet ">
                 <div class="card h-100 text-decoration-none slider">
-                    <img id="slider-img" src="img/img.png" class="card-img-top" alt="Photo Slider">
+                    <img id="slider-img" src="img/cahierDeCharge.png" class="card-img-top" alt="Photo Slider">
+                    <h5 class="card-title text-center">cahier des charges </h5>
                     <button id="prev"> ❮ </button>
                     <button id="next"> ❯ </button>
-                    <h5 class="card-title">cahier des charges </h5>
-                    <small>31/05/2023</small>
+                    <small class="text-center">31/05/2023</small>
                 </div>
             </div>
-            <!--PHP-->
-            <div class="col-lg-4 col-md-6 mb-4 projet logo">
-                <a href="#" class="card h-100 text-decoration-none"><button type="button" class="btn btn-warning"> Voir le code sur GitHub</button>
-                    <img src="img/logo.png" class="card-img-top" alt="">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Réseau Social (PHP)</h5>
-                        <p>
-                            Application web développée en PHP & MySQL. Gestion des utilisateurs, authentification, CRUD.
-                        </p>
-                        <small>31/04/2023</small>
-                    </div>
-                </a>
-            </div>
         </div>
-        </div>
+
     </section>
 
 
     <section id="competences" class="container py-5">
-        <h2 class="text-center mb-5">Mes Compétences</h2>
+        <h2 class="text-center mb-5 titre">Mes Compétences</h2>
         <p class="text-center text-muted mb-5">
             Je développe des sites web modernes, performants et adaptés aux besoins des clients, avec une attention particulière au design et au référencement.
         </p>
@@ -242,8 +272,6 @@
                         <div class="progress-bar" data-percent="95">95%</div>
                     </div>
                 </div>
-
-
 
                 <div class="skill mb-4">
                     <span>JavaScript</span>
@@ -313,26 +341,46 @@
 
         </div>
     </section>
+    <section id="contact" class="contact-section py-5">
+        <div class="container text-center">
+            <img src="img/logo.png" alt="Khaoula Digital Studio" class="contact-logo mb-4">
 
-    <section id="contact" class="container py-5 text-center">
-        <h2>Contact</h2>
+            <h2 class="mb-3 titre">Contact</h2>
 
-        <p class="text-muted mb-4">
-            Vous avez un projet web ou besoin d’une identité visuelle ? Contactez-moi directement.
-        </p>
+            <p class="text-muted mb-4">
+                Vous avez un projet web ou besoin d’une identité visuelle ? Contactez-moi directement.
+            </p>
 
-        <p>
-            📧 <a href="mailto:khaoula.digital.studio@gmail.com">khaoula.digital.studio@gmail.com</a><br> 💼 <a href="https://www.linkedin.com/in/khaoula-ammar/">LinkedIn</a><br> 🧑‍💻 <a href="https://github.com/Ammar-Khaoula">GitHub</a>
-        </p>
+            <div class="contact-info mb-4">
+                <p>
+                    📧 <a href="mailto:khaoula.digital.studio@gmail.com">
+                    khaoula.digital.studio@gmail.com
+                    </a>
+                </p>
+                <p>
+                    🔗 <a href="https://www.linkedin.com/in/khaoula-ammar/" target="_blank">
+                    LinkedIn
+                    </a>
+                </p>
+                <p>
+                    💻 <a href="https://github.com/Ammar-Khaoula" target="_blank">
+                GitHub
+                </a>
+                </p>
+            </div>
 
-        <a href="mailto:khaoula.digital.studio@gmail.com" class="btn btn-primary mt-3">
-    Me contacter
-  </a>
+            <a href="mailto:khaoula.digital.studio@gmail.com" class="btn btn-outline-primary">
+            Me contacter
+            </a>
 
-        <p class="text-muted mt-4">
-            Disponible pour missions freelance et collaborations.
-        </p>
+            <p class="text-muted mt-4">
+                Disponible pour missions freelance et collaborations.
+            </p>
+        </div>
     </section>
+
+
+
 
 
     <!-- Bootstrap JS (Popper inclus) -->

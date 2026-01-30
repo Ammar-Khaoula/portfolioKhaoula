@@ -1,73 +1,186 @@
-/*BIENVENUE*/
-
-.long {
-    font-weight: bolder;
-    font-size: 30px;
-    background: linear-gradient(90deg, rgb(250, 32, 217), rgb(250, 143, 239));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-/*PROJECT*/
-
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.card img {
-    height: 200px;
-    object-fit: cover;
-}
-
-.slider button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.2);
-    color: rgb(26, 33, 247);
-    border: none;
-    cursor: pointer;
-}
-
-#prev {
-    left: 10px;
-}
-
-#next {
-    right: 10px;
-}
-
-
-/*Competence*/
-
-.skill span {
-    font-weight: 600;
-    display: block;
-    margin-bottom: 6px;
-}
-
-.progress {
-    height: 22px;
-    background-color: #e9ecef;
-}
-
-.progress-bar {
-    width: 0;
-    background-color: #0d6efd;
-    font-weight: bold;
-    transition: width 1.5s ease-in-out;
-}
-
-
-/*contact*/
-
-#contact {
-    background-color: #f9f9f9;
-}
+    body,
+    p,
+    a,
+    li,
+    span,
+    small {
+        font-family: 'Inter', sans-serif;
+    }
+    
+    p {
+        line-height: 1.7;
+        color: #444;
+    }
+    /*navbar*/
+    
+    .custom-navbar {
+        background-color: #f8f9fa;
+        box-shadow: 1px 0px 4px 2px #d9d9d9;
+    }
+    
+    .logo {
+        width: 42px;
+        height: auto;
+    }
+    
+    .brand-text {
+        font-weight: 600;
+        font-size: 1rem;
+        color: #0d6efd;
+        letter-spacing: 0.5px;
+    }
+    
+    .navbar-nav .nav-link {
+        margin-left: 1rem;
+        font-weight: 500;
+        color: #333;
+    }
+    
+    .navbar-nav .nav-link:hover {
+        color: #0d6efd;
+    }
+    /* Bouton Contact discret */
+    
+    .btn-contact {
+        border: 1px solid #0d6efd;
+        border-radius: 20px;
+        padding: 0.3rem 1rem;
+    }
+    
+    .btn-contact:hover {
+        background-color: #0d6efd;
+        color: #fff !important;
+    }
+    /*BIENVENUE*/
+    
+    #accueil {
+        margin-top: 85px;
+    }
+    
+    .titre {
+        font-family: 'Playfair Display', serif;
+        color: #7900ff;
+        font-size: 50px;
+        padding: 20px;
+    }
+    
+    .long {
+        font-weight: bolder;
+        font-size: 30px;
+        background: linear-gradient(90deg, #0086ff, #7900ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    @media (max-width: 768px) {
+        .long {
+            font-size: 22px;
+        }
+        .titre {
+            font-size: 22px;
+        }
+        #accueil {
+            margin-top: 45px;
+        }
+    }
+    /*PROJECT*/
+    
+    #projects {
+        background-color: #f8f9fa;
+    }
+    
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+    
+    .card img {
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .slider button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.2);
+        color: rgb(26, 33, 247);
+        border: none;
+        cursor: pointer;
+    }
+    
+    #prev {
+        left: 10px;
+    }
+    
+    #next {
+        right: 10px;
+    }
+    /*Competence*/
+    
+    .skill span {
+        font-weight: 600;
+        display: block;
+        margin-bottom: 6px;
+    }
+    
+    .progress {
+        height: 22px;
+        background-color: #e9ecef;
+    }
+    
+    .progress-bar {
+        width: 0;
+        background: linear-gradient(90deg, #3339ff, #0086ff);
+        font-weight: bold;
+        transition: width 1.5s ease-in-out;
+    }
+    
+    #competences span {
+        color: #0d6efd;
+        font-family: serif;
+        font-weight: bolder;
+    }
+    /*contact*/
+    
+    .contact-section {
+        background-color: #f8f9fa;
+    }
+    
+    .contact-logo {
+        width: 110px;
+    }
+    
+    .contact-info p {
+        font-size: 1rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    .contact-info a {
+        color: #0d6efd;
+        text-decoration: none;
+    }
+    
+    .contact-info a:hover {
+        text-decoration: underline;
+    }
+    
+    .fade-in {
+        animation: fade 0.8s ease forwards;
+    }
+    
+    @keyframes fade {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }

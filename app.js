@@ -57,7 +57,7 @@ buttons.forEach(btn => {
 });
 
 // Tableau contenant les images
-const images = ["img/img.png", "img/pc.png", "img/Wireframe mobile.png", "img/fonction.png", "img/bacOfice.png"];
+const images = ["img/cahierDeCharge.png", "img/pc.png", "img/Wireframe mobile.png", "img/fonction.png", "img/bacOfice.png"];
 let currentIndex = 0;
 
 // Sélection des éléments HTML
@@ -99,8 +99,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 /******************contact**********************/
 
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-    document.getElementById("successMsg").classList.remove("d-none");
-    this.reset();
+
+const contact = document.querySelector('#contact');
+contact.classList.add('opacity-0');
+
+const observer = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) {
+        contact.classList.remove('opacity-0');
+        contact.classList.add('fade-in');
+    }
 });
+
+observer.observe(contact);
