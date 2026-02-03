@@ -1,186 +1,261 @@
-    body,
-    p,
-    a,
-    li,
-    span,
-    small {
-        font-family: 'Inter', sans-serif;
-    }
-    
-    p {
-        line-height: 1.7;
-        color: #444;
-    }
-    /*navbar*/
-    
-    .custom-navbar {
-        background-color: #f8f9fa;
-        box-shadow: 1px 0px 4px 2px #d9d9d9;
-    }
-    
-    .logo {
-        width: 42px;
-        height: auto;
-    }
-    
-    .brand-text {
-        font-weight: 600;
-        font-size: 1rem;
-        color: #0d6efd;
-        letter-spacing: 0.5px;
-    }
-    
-    .navbar-nav .nav-link {
-        margin-left: 1rem;
-        font-weight: 500;
-        color: #333;
-    }
-    
-    .navbar-nav .nav-link:hover {
-        color: #0d6efd;
-    }
-    /* Bouton Contact discret */
-    
-    .btn-contact {
-        border: 1px solid #0d6efd;
-        border-radius: 20px;
-        padding: 0.3rem 1rem;
-    }
-    
-    .btn-contact:hover {
-        background-color: #0d6efd;
-        color: #fff !important;
-    }
-    /*BIENVENUE*/
-    
-    #accueil {
-        margin-top: 85px;
-    }
-    
-    .titre {
-        font-family: 'Playfair Display', serif;
-        color: #7900ff;
-        font-size: 50px;
-        padding: 20px;
-    }
-    
-    .long {
-        font-weight: bolder;
-        font-size: 30px;
-        background: linear-gradient(90deg, #0086ff, #7900ff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    
-    @media (max-width: 768px) {
-        .long {
-            font-size: 22px;
+        body,
+        p,
+        a,
+        li,
+        span,
+        small {
+            font-family: 'Inter', sans-serif;
         }
-        .titre {
-            font-size: 22px;
+        
+        p {
+            line-height: 1.7;
+            color: #444;
         }
+        /*navbar*/
+        
+        .custom-navbar {
+            background-color: #f8f9fa;
+            box-shadow: 1px 0px 4px 2px #d9d9d9;
+        }
+        
+        .logo {
+            width: 42px;
+            height: auto;
+        }
+        
+        .brand-text {
+            font-weight: 600;
+            font-size: 1rem;
+            color: #0d6efd;
+            letter-spacing: 0.5px;
+        }
+        
+        .navbar-nav .nav-link {
+            margin-left: 1rem;
+            font-weight: 500;
+            color: #333;
+        }
+        
+        .navbar-nav .nav-link:hover {
+            color: #0d6efd;
+        }
+        /* Bouton Contact discret */
+        
+        .btn-contact {
+            border: 1px solid #0d6efd;
+            border-radius: 20px;
+            padding: 0.3rem 1rem;
+        }
+        
+        .btn-contact:hover {
+            background-color: #0d6efd;
+            color: #fff !important;
+        }
+        /*BIENVENUE*/
+        
         #accueil {
-            margin-top: 45px;
+            margin-top: 85px;
         }
-    }
-    /*PROJECT*/
-    
-    #projects {
-        background-color: #f8f9fa;
-    }
-    
-    .card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    }
-    
-    .card img {
-        height: 200px;
-        object-fit: cover;
-    }
-    
-    .slider button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        padding: 10px;
-        background-color: rgba(0, 0, 0, 0.2);
-        color: rgb(26, 33, 247);
-        border: none;
-        cursor: pointer;
-    }
-    
-    #prev {
-        left: 10px;
-    }
-    
-    #next {
-        right: 10px;
-    }
-    /*Competence*/
-    
-    .skill span {
-        font-weight: 600;
-        display: block;
-        margin-bottom: 6px;
-    }
-    
-    .progress {
-        height: 22px;
-        background-color: #e9ecef;
-    }
-    
-    .progress-bar {
-        width: 0;
-        background: linear-gradient(90deg, #3339ff, #0086ff);
-        font-weight: bold;
-        transition: width 1.5s ease-in-out;
-    }
-    
-    #competences span {
-        color: #0d6efd;
-        font-family: serif;
-        font-weight: bolder;
-    }
-    /*contact*/
-    
-    .contact-section {
-        background-color: #f8f9fa;
-    }
-    
-    .contact-logo {
-        width: 110px;
-    }
-    
-    .contact-info p {
-        font-size: 1rem;
-        margin-bottom: 0.4rem;
-    }
-    
-    .contact-info a {
-        color: #0d6efd;
-        text-decoration: none;
-    }
-    
-    .contact-info a:hover {
-        text-decoration: underline;
-    }
-    
-    .fade-in {
-        animation: fade 0.8s ease forwards;
-    }
-    
-    @keyframes fade {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
+        
+        .titre {
+            font-family: 'Playfair Display', serif;
+            color: #7900ff;
+            font-size: 50px;
+            padding: 20px;
         }
-        to {
+        
+        .long {
+            font-weight: bolder;
+            font-size: 30px;
+            background: linear-gradient(90deg, #0086ff, #7900ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        @media (max-width: 768px) {
+            .long {
+                font-size: 22px;
+            }
+            .titre {
+                font-size: 22px;
+            }
+            #accueil {
+                margin-top: 45px;
+            }
+        }
+        /*PROJECT*/
+        
+        #projects {
+            background-color: #f8f9fa;
+        }
+        
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .slider button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.2);
+            color: rgb(26, 33, 247);
+            border: none;
+            cursor: pointer;
+        }
+        
+        #prev {
+            left: 10px;
+        }
+        
+        #next {
+            right: 10px;
+        }
+        /*Competence*/
+        
+        .skill span {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 6px;
+        }
+        
+        .progress {
+            height: 22px;
+            background-color: #e9ecef;
+        }
+        
+        .progress-bar {
+            width: 0;
+            background: linear-gradient(90deg, #3339ff, #0086ff);
+            font-weight: bold;
+            transition: width 1.5s ease-in-out;
+        }
+        
+        #competences span {
+            color: #0d6efd;
+            font-family: serif;
+            font-weight: bolder;
+        }
+        /*contact*/
+        
+        .contact-section {
+            background-color: #f8f9fa;
+        }
+        
+        .contact-logo {
+            width: 110px;
+        }
+        
+        .contact-info p {
+            font-size: 1rem;
+            margin-bottom: 0.4rem;
+        }
+        
+        .contact-info a {
+            color: #0d6efd;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .fade-in {
+            animation: fade 0.8s ease forwards;
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* ========== BOUTONS FLOTTANTS ========== */
+        
+        .floating-btn {
+            position: fixed;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: none;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            z-index: 99999;
+            transition: transform 0.2s ease;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .floating-btn:hover {
+            transform: scale(1.1);
+        }
+        /* Bouton Chat - Plus discret */
+        
+        .chat-btn {
+            bottom: 95px;
+            background: #8a7cdc;
+            /* Violet plus clair */
+            color: white;
+            opacity: 0.8;
+        }
+        
+        .chat-btn:hover {
             opacity: 1;
-            transform: translateY(0);
         }
-    }
+        /* Bouton Téléphone - Mis en valeur */
+        
+        .phone-btn {
+            bottom: 20px;
+            background: #dc3545;
+            /* Rouge vif (attire l'attention) */
+            color: white;
+            font-size: 26px;
+            animation: pulse 2s infinite;
+        }
+        /* Animation "pulse" pour le téléphone */
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 12px rgba(220, 53, 69, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
+            }
+        }
+        /* Responsive */
+        
+        @media (max-width: 768px) {
+            .floating-btn {
+                width: 55px;
+                height: 55px;
+                font-size: 22px;
+            }
+            .chat-btn {
+                bottom: 85px;
+            }
+            .phone-btn {
+                bottom: 15px;
+                font-size: 24px;
+            }
+        }
