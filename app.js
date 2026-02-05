@@ -111,16 +111,3 @@ const observer = new IntersectionObserver(entries => {
 });
 
 observer.observe(contact);
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const chatBtn = document.getElementById('my-chat-btn');
-
-    if (chatBtn) {
-        chatBtn.addEventListener('click', function() {
-            if (typeof Tawk_API !== 'undefined') {
-                Tawk_API.toggle();
-            }
-        });
-    }
-});
