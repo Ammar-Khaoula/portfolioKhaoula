@@ -13,7 +13,8 @@
     <meta name="description" content="Développeuse web freelance en Île-de-France, création de sites internet modernes en HTML, CSS, JavaScript. Projets PHP et WordPress disponibles sur GitHub.">
     <!--font-->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+    <!-- Font Awesome - CDN officiel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Votre CSS perso -->
@@ -44,7 +45,7 @@
                         <a class="nav-link" href="#accueil">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projets">Projets</a>
+                        <a class="nav-link" href="#mesProjets">Projets</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#competences">Compétences</a>
@@ -57,21 +58,28 @@
 
         </div>
     </nav>
-
-
-    <!-- Sections exemple -->
     <section id="accueil" class="p-5 text-center">
-        <h1 class="titre">Bienvenue sur mon portfolio</h1>
-        <div class="info ">
-            <p> Développeuse web freelance passionnée par les nouvelles technologies,
-                </br> je conçois des sites internet modernes,
-                </br>responsives et adaptés aux besoins des entreprises et des indépendants.
-                </br>Depuis 2020, grâce à ma formation et à mes projets,
-                </br>j’ai acquis des compétences solides me permettant
-                </br>de créer des solutions web efficaces et professionnelles.
+        <!-- Photo professionnelle -->
+        <div class="mb-4">
+            <img src="img/photo_profil.png" alt="Khaoula Ammar - Développeuse web" class="photo-profil rounded-circle shadow">
+        </div>
+
+        <h1 class="titre">Khaoula Ammar</h1>
+
+        <div class="info">
+            <p class="fw-bold">
+                Développeuse web | Diplômée Bac+3 PHP/Symfony
             </p>
-            <p class="fw-semibold text-muted">
-                Technologies que j’utilise au quotidien :
+
+            <p>
+                Passionnée par le développement web et le design, j'ai suivi une formation complète chez OpenClassrooms.
+                <br>Spécialisée en intégration HTML/CSS/JavaScript, création de sites en PHP/Symfony et WordPress.
+                <br>Je réalise également des logos, flyers et cartes de visite avec Canva.
+                <br><strong>Disponible immédiatement pour CDI ou mission.</strong>
+            </p>
+
+            <p class="fw-semibold text-muted mt-3">
+                Technologies maîtrisées :
             </p>
 
             <br/><span class="long"></span>
@@ -98,6 +106,13 @@
                     <img src="img/Avion (2).jpg" class="card-img-top" alt="Reservia">
                     <div class="card-body text-center">
                         <h5 class="card-title">Reservia</h5>
+                        <p class="card-text text-muted mb-3">
+                            Site de réservation d'hébergement pour des vacances de rêve. Interface intuitive permettant de trouver et réserver facilement son logement idéal.
+                        </p>
+                        <div class="technologies mb-3">
+                            <span class="badge bg-primary me-2 mb-2">HTML5</span>
+                            <span class="badge bg-info text-dark me-2 mb-2">CSS3</span>
+                        </div>
                         <small>21/03/2021</small>
                     </div>
                 </a>
@@ -108,6 +123,15 @@
                     <img src="img/food.jpg" class="card-img-top" alt="OhMyFood">
                     <div class="card-body text-center">
                         <h5 class="card-title">OhMyFood</h5>
+                        <p class="card-text text-muted mb-3">
+                            Site web pour restaurant mettant en avant la carte des menus, les spécialités et permettant aux clients de découvrir l'établissement. Design moderne et appétissant pour attirer les gourmands.
+                        </p>
+
+                        <!-- Technologies -->
+                        <div class="technologies mb-3">
+                            <span class="badge bg-primary me-2 mb-2">HTML5</span>
+                            <span class="badge bg-info text-dark me-2 mb-2">CSS3</span>
+                        </div>
                         <small>26/04/2021</small>
                     </div>
                 </a>
@@ -118,6 +142,15 @@
                     <img src="img/seo.png" class="card-img-top" alt="seo">
                     <div class="card-body text-center">
                         <h5 class="card-title">La chouette agence</h5>
+                        <p class="card-text text-muted mb-3">
+                            Audit SEO complet d'un site web existant. Optimisation des performances, accessibilité et référencement naturel à l'aide de Lighthouse et Google PageSpeed Insights.
+                        </p>
+
+                        <!-- Technologies -->
+                        <div class="technologies mb-3">
+                            <span class="badge bg-success me-2 mb-2">SEO</span>
+                            <span class="badge bg-warning text-dark me-2 mb-2">Lighthouse</span>
+                        </div>
                         <small>17/05/2021</small>
                     </div>
                 </a>
@@ -128,6 +161,17 @@
                     <img src="img/camera.jpg" class="card-img-top" alt="Orinoco">
                     <div class="card-body text-center">
                         <h5 class="card-title">Orinoco</h5>
+                        <p class="card-text text-muted mb-3">
+                            Site e-commerce de vente de produits en ligne. Interface utilisateur intuitive avec catalogue de produits, panier d'achat dynamique et formulaire de commande. Développé avec HTML, CSS et JavaScript.
+                        </p>
+
+                        <!-- Technologies -->
+                        <div class="technologies mb-3">
+                            <span class="badge bg-primary me-2 mb-2">HTML5</span>
+                            <span class="badge bg-info text-dark me-2 mb-2">CSS3</span>
+                            <span class="badge bg-warning text-dark me-2 mb-2">JavaScript</span>
+                            <span class="badge bg-success me-2 mb-2">E-commerce</span>
+                        </div>
                         <small>18/07/2021</small>
                     </div>
                 </a>
@@ -137,6 +181,16 @@
                     <img src="img/reseau_social.png " class="card-img-top" alt="reseau_social">
                     <div class="card-body text-center">
                         <h5 class="card-title">Reseau Social</h5>
+                        <p class="card-text text-muted mb-3">
+                            Application de réseau social développée avec Vue.js. Interface dynamique permettant aux utilisateurs de créer un profil, partager des publications et interagir avec la communauté. Architecture SPA (Single Page Application) moderne.
+                        </p>
+
+                        <!-- Technologies -->
+                        <div class="technologies mb-3">
+                            <span class="badge bg-primary me-2 mb-2">HTML5</span>
+                            <span class="badge bg-info text-dark me-2 mb-2">CSS3</span>
+                            <span class="badge bg-success me-2 mb-2">Vue.js</span>
+                        </div>
                         <small>18/10/2021</small>
                     </div>
                 </a>
@@ -146,6 +200,17 @@
                     <img src="img/memoire.jpg " class="card-img-top" alt="jeux de memoire">
                     <div class="card-body text-center">
                         <h5 class="card-title">jeux mémoire</h5>
+                        <!-- Description -->
+                        <p class="card-text text-muted mb-3">
+                            Jeu éducatif pour enfants basé sur le principe du memory. L'enfant doit retourner les cartes pour trouver les paires de lettres de l'alphabet identiques. Interface ludique et colorée adaptée aux jeunes joueurs.
+                        </p>
+
+                        <!-- Technologies -->
+                        <div class="technologies mb-3">
+                            <span class="badge bg-primary me-2 mb-2">HTML5</span>
+                            <span class="badge bg-info text-dark me-2 mb-2">CSS3</span>
+                            <span class="badge bg-warning text-dark me-2 mb-2">JavaScript</span>
+                        </div>
                         <small>01/01/2022</small>
                     </div>
                 </a>
@@ -155,6 +220,18 @@
                     <img src="img/arriere_plan.jpg" class="card-img-top" alt="meteo">
                     <div class="card-body text-center">
                         <h5 class="card-title">API meteo</h5>
+                        <p class="card-text text-muted mb-3">
+                            Application météo interactive récupérant les données en temps réel via une API publique (OpenWeatherMap). Affichage de la température, conditions météo et prévisions selon la ville recherchée.
+                        </p>
+
+                        <!-- Technologies -->
+                        <div class="technologies mb-3">
+                            <span class="badge bg-primary me-2 mb-2">HTML5</span>
+                            <span class="badge bg-info text-dark me-2 mb-2">CSS3</span>
+                            <span class="badge bg-warning text-dark me-2 mb-2">JavaScript</span>
+                            <span class="badge bg-dark text-white me-2 mb-2">API REST</span>
+                            <span class="badge bg-primary me-2 mb-2">Fetch</span>
+                        </div>
                         <small>01/02/2022</small>
                     </div>
                 </a>
@@ -164,6 +241,18 @@
                     <img src="img/2.jpg" class="card-img-top" alt="salle de sport">
                     <div class="card-body text-center">
                         <h5 class="card-title">salle de sport</h5>
+                        <p class="card-text text-muted mb-3">
+                            Site one page pour salle de sport présentant les services, les tarifs et les horaires d'ouverture. Navigation fluide avec menu ancré et animations au défilement. Design moderne et énergique pour attirer les futurs membres.
+                        </p>
+
+                        <!-- Technologies -->
+                        <div class="technologies mb-3">
+                            <span class="badge bg-primary me-2 mb-2">HTML5</span>
+                            <span class="badge bg-info text-dark me-2 mb-2">CSS3</span>
+                            <span class="badge bg-warning text-dark me-2 mb-2">JavaScript</span>
+                            <span class="badge bg-success me-2 mb-2">One Page</span>
+                            <span class="badge bg-light text-dark me-2 mb-2">Animations</span>
+                        </div>
                         <small>10/02/2022</small>
                     </div>
                 </a>
@@ -173,6 +262,17 @@
                     <img src="img/vetement1.jpg" class="card-img-top" alt="e-Commerce">
                     <div class="card-body text-center">
                         <h5 class="card-title">e-Commerce</h5>
+                        <p class="card-text text-muted mb-3">
+                            Interface frontend d'une boutique e-commerce complète. Catalogue de produits dynamique, panier d'achat, filtres de recherche et système de paiement simulé.
+                        </p>
+
+                        <!-- Technologies -->
+                        <div class="technologies mb-3">
+                            <span class="badge bg-primary me-2 mb-2">HTML5</span>
+                            <span class="badge bg-info text-dark me-2 mb-2">CSS3</span>
+                            <span class="badge bg-warning text-dark me-2 mb-2">JavaScript</span>
+                            <span class="badge bg-success me-2 mb-2">E-commerce</span>
+                        </div>
                         <small>01/03/2022</small>
                     </div>
                 </a>
@@ -182,6 +282,18 @@
                     <img src="img/industrie.png" class="card-img-top" alt="Industrie">
                     <div class="card-body text-center">
                         <h5 class="card-title">Equipement Pour Industrie</h5>
+                        <p class="card-text text-muted mb-3">
+                            Site one page pour entreprise spécialisée dans les équipements industriels. Présentation des services, des machines proposées et des domaines d'intervention. Interface professionnelle avec navigation fluide et design technique adapté au secteur industriel.
+                        </p>
+
+                        <!-- Technologies -->
+                        <div class="technologies mb-3">
+                            <span class="badge bg-primary me-2 mb-2">HTML5</span>
+                            <span class="badge bg-info text-dark me-2 mb-2">CSS3</span>
+                            <span class="badge bg-warning text-dark me-2 mb-2">JavaScript</span>
+                            <span class="badge bg-success me-2 mb-2">One Page</span>
+                        </div>
+
                         <small>31/03/2022</small>
                     </div>
                 </a>
@@ -191,6 +303,18 @@
                     <img src="img/Avocat.jpg" class="card-img-top" alt="Avocat">
                     <div class="card-body text-center">
                         <h5 class="card-title">Avocat</h5>
+                        <p class="card-text text-muted mb-3">
+                            Site one page pour cabinet d'avocats présentant les domaines d'expertise, l'équipe juridique et les coordonnées de contact. Design sobre et professionnel inspirant confiance et crédibilité. Navigation intuitive avec sections bien structurées pour faciliter
+                            la prise de rendez-vous.
+                        </p>
+
+                        <!-- Technologies -->
+                        <div class="technologies mb-3">
+                            <span class="badge bg-primary me-2 mb-2">HTML5</span>
+                            <span class="badge bg-info text-dark me-2 mb-2">CSS3</span>
+                            <span class="badge bg-warning text-dark me-2 mb-2">JavaScript</span>
+                            <span class="badge bg-success me-2 mb-2">One Page</span>
+                        </div>
                         <small>01/01/2023</small>
                     </div>
                 </a>
@@ -200,6 +324,18 @@
                     <img src="img/peinture.jpg" class="card-img-top" alt="batiment">
                     <div class="card-body text-center">
                         <h5 class="card-title">Bâtiment</h5>
+                        <p class="card-text text-muted mb-3">
+                            Site one page pour entreprise du bâtiment présentant les services de construction, rénovation et aménagement. Design moderne mettant en valeur les réalisations avec galerie de photos et formulaire de contact. Adapté aux professionnels du secteur BTP pour
+                            attirer de nouveaux clients.
+                        </p>
+
+                        <!-- Technologies -->
+                        <div class="technologies mb-3">
+                            <span class="badge bg-primary me-2 mb-2">HTML5</span>
+                            <span class="badge bg-info text-dark me-2 mb-2">CSS3</span>
+                            <span class="badge bg-warning text-dark me-2 mb-2">JavaScript</span>
+                            <span class="badge bg-success me-2 mb-2">One Page</span>
+                        </div>
                         <small>31/01/2023</small>
                     </div>
                 </a>
@@ -208,7 +344,16 @@
                 <a href="#" class="card h-100 text-decoration-none">
                     <img src="img/1.png" class="card-img-top" alt="agence-immobiliere">
                     <div class="card-body text-center">
-                        <h5 class="card-title">agence immobiliere <small>"Wordpress"</small></h5>
+                        <h5 class="card-title">agence immobiliere</h5>
+                        <p class="card-text text-muted mb-3">
+                            Site vitrine pour agence immobilière réalisé avec WordPress. Présentation des biens en vente/location, formulaire de recherche avancée, galerie de photos haute résolution et intégration de Google Maps pour localiser les propriétés. Thème personnalisé
+                            avec design élégant inspirant confiance aux futurs acquéreurs.
+                        </p>
+
+                        <!-- Technologies -->
+                        <div class="technologies mb-3">
+                            <span class="badge bg-primary me-2 mb-2">WordPress</span>
+                        </div>
                         <small>31/04/2023</small>
                     </div>
                 </a>
@@ -341,6 +486,7 @@
 
         </div>
     </section>
+
     <section id="contact" class="contact-section py-5">
         <div class="container text-center">
             <img src="img/logo.png" alt="Khaoula Digital Studio" class="contact-logo mb-4">
@@ -378,6 +524,65 @@
             </p>
         </div>
     </section>
+    <!-- ========== Footer ========== -->
+    <footer class="footer-section bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Logo / Nom -->
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <h5 class="mb-0">Khaoula Ammar</h5>
+                    <p class="mb-0 small">Développeuse web</p>
+                </div>
+
+                <!-- Liens rapides -->
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <div class="footer-links">
+                        <a href="#accueil" class="text-white text-decoration-none mx-2">Accueil</a>
+                        <a href="#competences" class="text-white text-decoration-none mx-2">Compétences</a>
+                        <a href="#projets" class="text-white text-decoration-none mx-2">Projets</a>
+                        <a href="#contact" class="text-white text-decoration-none mx-2">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Réseaux sociaux -->
+                <div class="col-md-4 text-center text-md-end">
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/khaoula-ammar/" target="_blank" class="text-white mx-2">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="https://github.com/Ammar-Khaoula" target="_blank" class="text-white mx-2">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                        <a href="mailto:khaoula.digital.studio@gmail.com" class="text-white mx-2">
+                            <i class="fas fa-envelope fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Ligne de séparation -->
+            <hr class="my-3 bg-light">
+
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col text-center">
+                    <p class="mb-0 small">
+                        &copy; <span id="year"></span> Khaoula Ammar - Tous droits réservés
+                    </p>
+                    <!-- Dans la section copyright -->
+                    <p class="mb-0 small">
+                        &copy; <span id="year"></span> Khaoula Ammar -
+                        <a href="mentions-legales.html" class="text-white text-decoration-none ">
+                        Mentions légales
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
     <!-- Bouton Téléphone -->
     <a href="tel:+33768836705" id="my-phone-btn" class="floating-btn phone-btn pulse">📞</a>
 
